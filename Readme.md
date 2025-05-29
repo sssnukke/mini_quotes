@@ -6,5 +6,16 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/yourusername/quotebook.git
-   cd quotebook
+   git clone git@github.com:sssnukke/mini_quotes.git
+
+## Запуск через Docker
+
+   1. Убедитесь, что у вас установлен Docker
+   2. Выполните в терминале:
+
+   ```bash
+   # Сборка образа
+   docker build -t mini_quotes .
+   
+   # Запуск контейнера
+   docker run -dp 8080:8080 quotebook
